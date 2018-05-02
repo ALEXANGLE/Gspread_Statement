@@ -42,17 +42,22 @@
 ```
 
 ### 開啟專案(spreadsheet)方式：
-	gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   
+```python
+gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   
 		#open by spreadsheet's ID
 	
 	gsheet = gs.open ('111')  
 		#open by spreadsheet's title
-
+```
 ### Create與Delete worksheet方式：
-	worksheet = gs.add_worksheet(title="A worksheet", rows="100", cols="20")
+```python
+worksheet = gs.add_worksheet(title="A worksheet", rows="100", cols="20")
 
 	gs.del_worksheet(worksheet)
-### 選擇worksheet方式：
+```
+### 選擇worksheet方式:
+```python
+
 	ws=gsheet.get_worksheet(2)            
 		#get worksheet by index.               
 			#p.s : start at index 0
@@ -62,24 +67,28 @@
 
 	worksheet_list = gsheet.worksheets()  
 		#get the list of all worksheet
-
+```
 ### 選擇一格或者是一個範圍：
+```python
 	cell_list=ws.range('A1:D6')  		  #select range,資料型態為list
 	cell = ws.acell('B1')				  #get B1's value
 	cell = ws.cell(1, 2)   				  #get row 1 	coluem 2 (B1) value
+```
 ![code1](./code1.jpg)
 ![code2](./code2.jpg)
 ### CELL的資料型態包含
 ![cell](./cell.jpg)
 
 ### 取得範圍或者一格的Value：
+```python
 	val = ws.acell('B1').value  			#get B1's value
 	val = ws.cell(1, 2).value   			#get row 1 coluem 2 (B1) value
 	values_list = ws.row_values(1)  		#get list of 	value by row (p.s:start at 1)
 	values_list = ws.col_values(3)  		#get list of 	value by column (p.s:start at 1)
 	list_of_lists = ws.get_all_values()     #get list of list of value 
-
+```
 ### 設定一格或者範圍Value：
+```python
 	ws.update_acell('B1', 'Bingo!')		#update value of a cell
 	#Or
 	ws.update_cell(1, 2, 'Bingo!')		#與上一個指令的動作一樣
@@ -88,8 +97,9 @@
 	for cell in cell_list:
 	   cell.value = 'O_o'				#change value
 	ws.update_cells(cell_list)			#update value 
-
+```
 ###透過值來尋找Cell(可以配合re使用)：
+```python
 	cell = worksheet.find("Dough")   #get the cell 
 	cell_list = worksheet.findall("Rug store")   #get list of cell 
-
+```

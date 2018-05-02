@@ -11,17 +11,17 @@
 
 #### Step2.打開連結，搜尋Google Drive API與Google Sheets API並啟用 
 ### [Open Link ](https://console.developers.google.com/apis/)
-![api1](./api1.jpg)
-![api2](./api2.jpg)
-![api3](./api3.jpg)
-![api4](./api4.jpg)
+![api1](./p/api1.jpg)
+![api2](./p/api2.jpg)
+![api3](./p/api3.jpg)
+![api4](./p/api4.jpg)
 
 #### Step3.到憑證頁面新增一個’服務帳戶金鑰’
-![key1](./key1.jpg)
-![key2](./key2.jpg)
+![key1](./p/key1.jpg)
+![key2](./p/key2.jpg)
 
 #### Step4.建立之後把輸出的Json檔放入執行python同一個目錄下
-![dir1](./dir1.jpg)
+![dir1](./p/dir1.jpg)
 
 ---
 ## 程式部分：
@@ -74,10 +74,10 @@
 	cell = ws.acell('B1')				  #get B1's value
 	cell = ws.cell(1, 2)   				  #get row 1 	coluem 2 (B1) value
 ```
-![code1](./code1.jpg)
-![code2](./code2.jpg)
+![code1](./p/code1.jpg)
+![code2](./p/code2.jpg)
 ### CELL的資料型態包含
-![cell](./cell.jpg)
+![cell](./p/cell.jpg)
 
 ### 取得範圍或者一格的Value：
 ```python

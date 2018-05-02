@@ -17,11 +17,11 @@
 ![api4](./api4.jpg)
 
 #### Step3.到憑證頁面新增一個’服務帳戶金鑰’
-	![key1](./key1.jpg)
-	![key2](./key2.jpg)
+![key1](./key1.jpg)
+![key2](./key2.jpg)
 
 #### Step4.建立之後把輸出的Json檔放入執行python同一個目錄下
-	![dir1](./dir1.jpg)
+![dir1](./dir1.jpg)
 
 ---
 ## 程式部分：

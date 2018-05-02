@@ -98,7 +98,7 @@
 	   cell.value = 'O_o'				#change value
 	ws.update_cells(cell_list)			#update value 
 ```
-###透過值來尋找Cell(可以配合re使用)：
+### 透過值來尋找Cell(可以配合re使用)：
 ```python
 	cell = worksheet.find("Dough")   #get the cell 
 	cell_list = worksheet.findall("Rug store")   #get list of cell 

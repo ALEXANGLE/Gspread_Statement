@@ -32,7 +32,7 @@
 	import gspread   #pip install gspread
 	from oauth2client.service_account import 	ServiceAccountCredentials   #pip install --upgrade oauth2client
 
-	scope = ['https://spreadsheets.google.com/	feeds','https://www.googleapis.com/auth/drive']
+	scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
 	CLIENT_SECRET_FILE = 'a.json'   #file of Key,same dir
 
 	credentials = ServiceAccountCredentials.from_json_keyfile_name(CLIENT_SECRET_FILE,scope)

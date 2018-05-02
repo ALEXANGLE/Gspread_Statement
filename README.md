@@ -43,7 +43,7 @@
 
 ### 開啟專案(spreadsheet)方式：
 ```python
-gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   
+	gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   
 		#open by spreadsheet's ID
 	
 	gsheet = gs.open ('111')  
@@ -51,7 +51,7 @@ gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')
 ```
 ### Create與Delete worksheet方式：
 ```python
-worksheet = gs.add_worksheet(title="A worksheet", rows="100", cols="20")
+	worksheet = gs.add_worksheet(title="A worksheet", rows="100", cols="20")
 
 	gs.del_worksheet(worksheet)
 ```

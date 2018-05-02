@@ -27,7 +27,7 @@
 ## 程式部分：
 #### header
 	
-	#-*- coding:utf-8 -*-
+```#-*- coding:utf-8 -*-
 
 	import gspread   #pip install gspread
 	from oauth2client.service_account import ServiceAccountCredentials   #pip install --upgrade oauth2client
@@ -37,7 +37,7 @@
 
 	credentials = ServiceAccountCredentials.from_json_keyfile_name(CLIENT_SECRET_FILE,scope)
 
-	gs = gspread.authorize(credentials)
+	gs = gspread.authorize(credentials)```
 
 ### 開啟專案(spreadsheet)方式：
 	gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   

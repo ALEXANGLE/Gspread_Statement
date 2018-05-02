@@ -41,10 +41,10 @@
 
 ### 開啟專案(spreadsheet)方式：
 	gsheet = gs.open_by_key ('1n0Gd9RPVqQBYSZ_jgoHIcuR5J5uO88Fd7SeOUVv_f_I')   
-	#open by spreadsheet's ID
+		#open by spreadsheet's ID
 	
 	gsheet = gs.open ('111')  
-	#open by spreadsheet's title
+		#open by spreadsheet's title
 
 ### Create與Delete worksheet方式：
 	worksheet = gs.add_worksheet(title="A worksheet", rows="100", cols="20")
@@ -52,14 +52,14 @@
 	gs.del_worksheet(worksheet)
 ### 選擇worksheet方式：
 	ws=gsheet.get_worksheet(2)            
-	#get worksheet by index.               
-		#p.s : start at index 0
+		#get worksheet by index.               
+			#p.s : start at index 0
 
 	ws=gsheet.worksheet("January")        
-	#get worksheet by worksheet's title
+		#get worksheet by worksheet's title
 
 	worksheet_list = gsheet.worksheets()  
-	#get the list of all worksheet
+		#get the list of all worksheet
 
 ### 選擇一格或者是一個範圍：
 	cell_list=ws.range('A1:D6')  		  #select range,資料型態為list

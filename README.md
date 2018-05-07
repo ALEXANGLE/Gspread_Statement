@@ -22,7 +22,8 @@
 
 #### Step4.建立之後把輸出的Json檔放入執行python同一個目錄下
 ![dir1](./p/dir1.jpg)
-##P.S.
+
+## P.S.
 如果遇到以下錯誤
 ![error1](./p/error1.png)
 是因為Key使用錯誤，正確的Key是
